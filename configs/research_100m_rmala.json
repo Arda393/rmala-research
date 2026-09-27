@@ -1,0 +1,25 @@
+{
+  "model": {
+    "vocab_size": 32000,
+    "dim": 768,
+    "heads": 12,
+    "layers": 12,
+    "variant": "rmala",
+    "dropout": 0.1,
+    "capacity": 8192,
+    "topk": 8,
+    "tau": 0.3,
+    "backend": "fla"
+  },
+  "seed": 17,
+  "steps": 7629,
+  "block": 2048,
+  "batch_size": 1,
+  "gradient_accumulation": 256,
+  "lr": 0.0006,
+  "warmup_steps": 200,
+  "bf16": true,
+  "corpus": "data/subset_8gb",
+  "pilot_report": "runs/diagnostics/pilot.json",
+  "notes": "Planning config only. Steps are an approximate payload budget; reference sampler does not guarantee one epoch. Recompute from actual train_tokens and production loader."
+}

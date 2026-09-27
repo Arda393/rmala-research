@@ -1,0 +1,19 @@
+{
+  "model": {
+    "vocab_size": 256,
+    "dim": 64,
+    "heads": 2,
+    "layers": 1,
+    "variant": "surprise",
+    "dropout": 0,
+    "capacity": 32,
+    "tau": 0.3
+  },
+  "task": "mqar",
+  "seed": 17,
+  "steps": 30,
+  "block": 32,
+  "batch_size": 2,
+  "lr": 0.001,
+  "warmup_steps": 5
+}
